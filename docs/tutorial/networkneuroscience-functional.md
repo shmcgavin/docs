@@ -3,7 +3,7 @@
 
 ## Functional Connectivity.
 
-Functional MRI measures the BOLD signal - a measure associated with neuronal activity - across the entire brain in order to identify functional characteristics of the brain. One particular type of analysis that describes the functional organization of the brain is functional connectivity analysis. Functional connectivity characterizes how in-sync, or out-of-sync, particular regions are by correlating their BOLD responses at every time point across an entire fMRI scan. The rationale is that regions that are highly correlated in their BOLD responses at a given time are likely to be working together for a particular task or activity. These correlation values are stored in what is known as a connectivity matrix. Each position in the matrix represents the correlation of BOLD activity between two particular regions. 
+Functional MRIs measure the **BOLD signal**, or a measure associated with neuronal activity, across the entire brain in order to identify functional characteristics of the brain. One particular type of analysis that describes the functional organization of the brain is **functional connectivity analysis**. Functional connectivity characterizes how in-sync or out-of-sync particular brain regions are by correlating their BOLD responses at every time point across an entire fMRI scan. The rationale is that regions that are highly correlated in their BOLD responses at a given time are likely to be working together for a particular task or activity. These correlation values are stored in what is known as a **connectivity matrix**. Each position in the matrix represents the correlation of BOLD activity between two particular regions. 
 
 | ![connectivity-matrix](INSERT IMAGE URL) |
 |------------------------------------|
@@ -13,9 +13,9 @@ From these matrices, scientists can then examine properties that describe the in
 
 | ![network-graph-1](INSERT IMAGE URL) ![network-graph-2](INSERT IMAGE URL) |
 |------------------------------------|
-| A few examples of network graphs derived from a matrix like the one above! These graphs can diagram how inter-related different regions are during specific tasks and can be used to examine both global and local properties of networks in the brain. The image on the left represents  |
+| A few examples of network graphs derived from a matrix. These graphs can diagram how inter-related different regions are during specific tasks and can be used to examine both global and local properties of networks in the brain. The image on the left represents  |
 
-This page demonstrates how to generate functional connectivity matrices on brainlife.io. The goal of this tutorial is to show you how to generate functional connectivity matrices following fMRI preprocessing. This tutorial will be using [Multi-atlas Transfer Tool (MaTT)](https://doi.org/10.25663/bl.app.23) to map the Glasser 180-node cortical atlas to preprocessed Freesurfer surfaces and ![conmat](https://doi.org/10.25663/brainlife.app.167) to compute the correlation between each region in the atlas.
+This page demonstrates how to generate functional connectivity matrices on brainlife.io. The goal of this tutorial is to show you how to generate functional connectivity matrices following fMRI preprocessing. This tutorial will be using the [Multi-atlas Transfer Tool (MaTT)](https://doi.org/10.25663/bl.app.23) to map the Glasser 180-node cortical atlas to preprocessed Freesurfer surfaces and [conmat](https://doi.org/10.25663/brainlife.app.167) to compute the correlation between each region in the atlas.
 
 This tutorial will use a combination of skills developed in the [Introduction tutorial](https://brainlife.io/docs/tutorial/introduction-to-brainlife/) and presumes that you have data processed using [fMRIPREP](https://brainlife.io/app/5c61c69f14027a01b14adcb3). If you haven't read our introduction to brainlife, or if you don't have preprocessed fMRI and Freesurfer outputs on brainlife.io, please go back through that tutorial or the [Functional MRI Preprocessing](https://brainlife.io/docs/tutorial/fmri-preprocessing-tutorial) tutorial before beginning this one.
 
